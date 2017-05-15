@@ -41,7 +41,7 @@ require('jit-grunt')(grunt, {
       },
       pages: {
         options: {
-          remote: 'git@github.com:your_github_user/your_webapp.git',
+          remote: 'git@github.com:mrtcam77/AngularApp.git',
           branch: 'gh-pages'
         }
       }

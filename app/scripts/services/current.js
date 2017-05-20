@@ -6,11 +6,11 @@ angular.module('angularAppApp')
     // ...
 
     // Public API here
-    return $resource('http://api.openweathermap.org/data/2.5/weather?q=:location&units=imperial&APPID=7c05932d89845c2f21fbb4532f9ca6ae', {}, {
+    return $resource('http://api.openweathermap.org/data/2.5/weather?id=:cityID&units=imperial&APPID=7c05932d89845c2f21fbb4532f9ca6ae', {}, {
       query: {
         method:'GET',
         params:{
-          location: 'Seattle,us'
+          cityID: '4717560' // Paris, France ID
         },
         isArray:false
       }
